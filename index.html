@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAlpha Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Image Gallery</h1>
+    <p>Click any image to view in lightbox</p>
+  </header>
+
+  <main class="gallery">
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1015/800/600" alt="Mountain Valley" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1018/800/600" alt="Mist Hills" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1025/800/600" alt="Pug Portrait" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1035/800/600" alt="Waterfall" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1043/800/600" alt="Forest Stream" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1050/800/600" alt="Ocean Cliff" />
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
+    <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous">&lsaquo;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Preview" />
+    <button class="nav-btn next-btn" id="nextBtn" aria-label="Next">&rsaquo;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
